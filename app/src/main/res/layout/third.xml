@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#00FFFF">
+    <EditText
+        android:id="@+id/ed_color"
+        android:hint="차량 색상 입력"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/ed_speed"
+        android:hint="차량 속도 입력"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="149dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="20dp"
+        android:text="객체생성"
+        app:backgroundTint="@color/teal_200" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="149dp"
+        android:layout_height="64dp"
+        android:text="가속 버튼"></Button>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="149dp"
+        android:layout_height="64dp"
+        android:text="감속 버튼"></Button>
+    <TextView
+        android:id="@+id/txv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가속버튼 결과창"
+        android:layout_weight="1"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/txv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="감속버튼 결과창"
+        android:layout_weight="1"
+        android:textSize="24sp"/>
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="돌아가기"/>
+</LinearLayout>

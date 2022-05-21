@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <Button
+        android:id="@+id/btn_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자기소개"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="정보를 보시려면 스위치를 켜시고,\n과제를 보려면 서랍을 여세요."
+        android:textColor="#F44336" />
+    <Switch
+        android:id="@+id/sw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지기소개 보이기"/>
+
+    <Button
+        android:id="@+id/btn_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전공"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/btn_site"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="즐겨찾는사이트"
+        android:visibility="gone"/>
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="나의소개칸\n이름:양재혁\n학과:빅데이터\n학번:2017"/>
+
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="과제 서랍 손잡이" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ff00"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여기는 서랍 안입니다."
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/btn_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자동차 클래스"/>
+
+            <Button
+                android:id="@+id/btn_cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="간단한 계산기"/>
+            <Button
+                android:id="@+id/btn_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="예약 앱"/>
+            <Button
+                android:id="@+id/btn_write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="파일쓰기 앱"/>
+
+            <Button
+                android:id="@+id/btn_diary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="일기장 앱"/>
+
+            <Button
+                android:id="@+id/btn_draw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="그림판 앱"/>
+
+            <Button
+                android:id="@+id/btn_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="프로젝트"/>
+
+            <Button
+                android:id="@+id/btn_ex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="서랍닫기"/>
+
+
+        </LinearLayout>
+    </SlidingDrawer>
+
+</LinearLayout>
